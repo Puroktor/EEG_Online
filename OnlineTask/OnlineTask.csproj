@@ -109,5 +109,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="dll\alglibnet2.dll" />
+    <Content Include="dll\FoundationLibrary.dll" />
+    <Content Include="dll\NetManager.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
