@@ -46,6 +46,7 @@ namespace OnlineTask
                     double[] data = channels[i].ToArray();
                     Trend.SubtractionTrend(data);
                     alglib.fftr1d(data, out alglib.complex[] fur);
+                    channels[i].Clear();
                 }
             }
         }
