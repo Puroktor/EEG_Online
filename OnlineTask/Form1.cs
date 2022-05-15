@@ -92,13 +92,12 @@ namespace OnlineTask
                 {
                     double y = Convert.ToDouble(frame.Data[channelsInd[i] * 24 + j]);
                     channels[i].AddLast(y);
-                    chart.Series[i].Points.AddY(y);
                 }
                 while (channels[i].Count > window)
                 {
                     channels[i].RemoveFirst();
-                    chart.Series[i].Points.RemoveAt(0);
                 }
+                chart.Series[i].Points.DataBindY(channels[i]);
             }
             if (channels[0].Count == window)
             {
