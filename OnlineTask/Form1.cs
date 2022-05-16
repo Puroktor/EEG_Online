@@ -73,9 +73,12 @@ namespace OnlineTask
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            System.Windows.Forms.Cursor.Position = new Point(
-                System.Windows.Forms.Cursor.Position.X + 2 * direction,
-                System.Windows.Forms.Cursor.Position.Y);
+            if (reseiveClientControl.Client.IsRunning)
+            {
+                System.Windows.Forms.Cursor.Position = new Point(
+                    System.Windows.Forms.Cursor.Position.X + 2 * direction,
+                    System.Windows.Forms.Cursor.Position.Y);
+            }
         }
 
         private void Client_Error(object sender, EventMsgArgs e)
@@ -131,6 +134,7 @@ namespace OnlineTask
                 }
                 else
                 {
+                    direction = 0;
                     labelDir.Text = "-";
                 }
                 labelL.Text = leftAvg.ToString("0.##");
