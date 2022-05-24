@@ -28,14 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.reseiveClientControl = new NetManager.Client.ReseiveClientControl();
             this.button = new System.Windows.Forms.Button();
-            this.timer = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -64,16 +62,18 @@
             // 
             this.reseiveClientControl.IPServer = ((System.Net.IPAddress)(resources.GetObject("reseiveClientControl.IPServer")));
             this.reseiveClientControl.IsSyncronized = true;
-            this.reseiveClientControl.Location = new System.Drawing.Point(17, 12);
+            this.reseiveClientControl.Location = new System.Drawing.Point(23, 15);
+            this.reseiveClientControl.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.reseiveClientControl.Name = "reseiveClientControl";
-            this.reseiveClientControl.Size = new System.Drawing.Size(174, 98);
+            this.reseiveClientControl.Size = new System.Drawing.Size(232, 121);
             this.reseiveClientControl.TabIndex = 4;
             // 
             // button
             // 
-            this.button.Location = new System.Drawing.Point(71, 116);
+            this.button.Location = new System.Drawing.Point(95, 143);
+            this.button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(75, 23);
+            this.button.Size = new System.Drawing.Size(100, 28);
             this.button.TabIndex = 5;
             this.button.Text = "Старт";
             this.button.UseVisualStyleBackColor = true;
@@ -84,9 +84,10 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(12, 355);
+            this.label1.Location = new System.Drawing.Point(16, 437);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(579, 29);
+            this.label1.Size = new System.Drawing.Size(713, 36);
             this.label1.TabIndex = 6;
             this.label1.Text = "Спектральная плотность мощности μ-ритма:";
             // 
@@ -95,9 +96,10 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(29, 417);
+            this.label2.Location = new System.Drawing.Point(39, 513);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 25);
+            this.label2.Size = new System.Drawing.Size(100, 31);
             this.label2.TabIndex = 7;
             this.label2.Text = "на С3:";
             // 
@@ -106,9 +108,10 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(29, 474);
+            this.label3.Location = new System.Drawing.Point(39, 583);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 25);
+            this.label3.Size = new System.Drawing.Size(97, 31);
             this.label3.TabIndex = 8;
             this.label3.Text = "на Т3:";
             // 
@@ -117,9 +120,10 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(320, 474);
+            this.label4.Location = new System.Drawing.Point(427, 583);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 25);
+            this.label4.Size = new System.Drawing.Size(97, 31);
             this.label4.TabIndex = 10;
             this.label4.Text = "на Т4:";
             // 
@@ -128,9 +132,10 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(320, 417);
+            this.label5.Location = new System.Drawing.Point(427, 513);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 25);
+            this.label5.Size = new System.Drawing.Size(100, 31);
             this.label5.TabIndex = 9;
             this.label5.Text = "на С4:";
             // 
@@ -139,9 +144,10 @@
             this.labelC3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelC3.AutoSize = true;
             this.labelC3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelC3.Location = new System.Drawing.Point(120, 417);
+            this.labelC3.Location = new System.Drawing.Point(160, 513);
+            this.labelC3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelC3.Name = "labelC3";
-            this.labelC3.Size = new System.Drawing.Size(25, 25);
+            this.labelC3.Size = new System.Drawing.Size(30, 31);
             this.labelC3.TabIndex = 11;
             this.labelC3.Text = "0";
             // 
@@ -150,9 +156,10 @@
             this.labelT3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelT3.AutoSize = true;
             this.labelT3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelT3.Location = new System.Drawing.Point(120, 474);
+            this.labelT3.Location = new System.Drawing.Point(160, 583);
+            this.labelT3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelT3.Name = "labelT3";
-            this.labelT3.Size = new System.Drawing.Size(25, 25);
+            this.labelT3.Size = new System.Drawing.Size(30, 31);
             this.labelT3.TabIndex = 12;
             this.labelT3.Text = "0";
             // 
@@ -161,9 +168,10 @@
             this.labelT4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelT4.AutoSize = true;
             this.labelT4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelT4.Location = new System.Drawing.Point(410, 474);
+            this.labelT4.Location = new System.Drawing.Point(547, 583);
+            this.labelT4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelT4.Name = "labelT4";
-            this.labelT4.Size = new System.Drawing.Size(25, 25);
+            this.labelT4.Size = new System.Drawing.Size(30, 31);
             this.labelT4.TabIndex = 14;
             this.labelT4.Text = "0";
             // 
@@ -172,9 +180,10 @@
             this.labelR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelR.AutoSize = true;
             this.labelR.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelR.Location = new System.Drawing.Point(410, 523);
+            this.labelR.Location = new System.Drawing.Point(547, 644);
+            this.labelR.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelR.Name = "labelR";
-            this.labelR.Size = new System.Drawing.Size(25, 25);
+            this.labelR.Size = new System.Drawing.Size(30, 31);
             this.labelR.TabIndex = 18;
             this.labelR.Text = "0";
             // 
@@ -183,9 +192,10 @@
             this.labelL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelL.AutoSize = true;
             this.labelL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelL.Location = new System.Drawing.Point(120, 523);
+            this.labelL.Location = new System.Drawing.Point(160, 644);
+            this.labelL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelL.Name = "labelL";
-            this.labelL.Size = new System.Drawing.Size(25, 25);
+            this.labelL.Size = new System.Drawing.Size(30, 31);
             this.labelL.TabIndex = 17;
             this.labelL.Text = "0";
             // 
@@ -194,9 +204,10 @@
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(320, 523);
+            this.label12.Location = new System.Drawing.Point(427, 644);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(77, 25);
+            this.label12.Size = new System.Drawing.Size(96, 31);
             this.label12.TabIndex = 16;
             this.label12.Text = "сред.:";
             // 
@@ -205,9 +216,10 @@
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(29, 523);
+            this.label13.Location = new System.Drawing.Point(39, 644);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 25);
+            this.label13.Size = new System.Drawing.Size(96, 31);
             this.label13.TabIndex = 15;
             this.label13.Text = "сред.:";
             // 
@@ -216,9 +228,10 @@
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(160, 580);
+            this.label14.Location = new System.Drawing.Point(213, 714);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(139, 25);
+            this.label14.Size = new System.Drawing.Size(171, 31);
             this.label14.TabIndex = 19;
             this.label14.Text = "отношение:";
             // 
@@ -227,9 +240,10 @@
             this.labelK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelK.AutoSize = true;
             this.labelK.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelK.Location = new System.Drawing.Point(320, 580);
+            this.labelK.Location = new System.Drawing.Point(427, 714);
+            this.labelK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelK.Name = "labelK";
-            this.labelK.Size = new System.Drawing.Size(25, 25);
+            this.labelK.Size = new System.Drawing.Size(30, 31);
             this.labelK.TabIndex = 20;
             this.labelK.Text = "0";
             // 
@@ -238,26 +252,28 @@
             this.labelDir.AutoSize = true;
             this.labelDir.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelDir.ForeColor = System.Drawing.Color.Red;
-            this.labelDir.Location = new System.Drawing.Point(393, 12);
+            this.labelDir.Location = new System.Drawing.Point(524, 15);
+            this.labelDir.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDir.Name = "labelDir";
-            this.labelDir.Size = new System.Drawing.Size(78, 108);
+            this.labelDir.Size = new System.Drawing.Size(98, 135);
             this.labelDir.TabIndex = 21;
             this.labelDir.Text = "-";
             // 
             // chart
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart.ChartAreas.Add(chartArea3);
+            chartArea2.Name = "ChartArea1";
+            this.chart.ChartAreas.Add(chartArea2);
             this.chart.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend3.Name = "Legend1";
-            this.chart.Legends.Add(legend3);
-            this.chart.Location = new System.Drawing.Point(600, 0);
+            legend2.Name = "Legend1";
+            this.chart.Legends.Add(legend2);
+            this.chart.Location = new System.Drawing.Point(800, 0);
+            this.chart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chart.Name = "chart";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart.Series.Add(series3);
-            this.chart.Size = new System.Drawing.Size(664, 681);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart.Series.Add(series2);
+            this.chart.Size = new System.Drawing.Size(885, 838);
             this.chart.TabIndex = 22;
             this.chart.Text = "chart";
             // 
@@ -266,8 +282,9 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 681);
+            this.panel1.Size = new System.Drawing.Size(800, 838);
             this.panel1.TabIndex = 23;
             // 
             // panel2
@@ -276,8 +293,9 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(600, 681);
+            this.panel2.Size = new System.Drawing.Size(800, 838);
             this.panel2.TabIndex = 24;
             // 
             // labelC4
@@ -285,17 +303,18 @@
             this.labelC4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelC4.AutoSize = true;
             this.labelC4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelC4.Location = new System.Drawing.Point(410, 417);
+            this.labelC4.Location = new System.Drawing.Point(547, 513);
+            this.labelC4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelC4.Name = "labelC4";
-            this.labelC4.Size = new System.Drawing.Size(25, 25);
+            this.labelC4.Size = new System.Drawing.Size(30, 31);
             this.labelC4.TabIndex = 24;
             this.labelC4.Text = "0";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1685, 838);
             this.Controls.Add(this.labelDir);
             this.Controls.Add(this.labelK);
             this.Controls.Add(this.label14);
@@ -314,6 +333,7 @@
             this.Controls.Add(this.reseiveClientControl);
             this.Controls.Add(this.chart);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Движение мыши";
             ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
@@ -329,7 +349,6 @@
 
         private NetManager.Client.ReseiveClientControl reseiveClientControl;
         private System.Windows.Forms.Button button;
-        private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

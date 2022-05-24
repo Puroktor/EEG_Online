@@ -32,9 +32,20 @@ namespace OnlineTask
             InitChart();
             reseiveClientControl.Client.Reseive += Client_Reseive;
             reseiveClientControl.Client.Error += Client_Error;
-            timer.Interval = 1;
-            timer.Tick += Timer_Tick;
-            timer.Start();
+            System.Timers.Timer timer = new System.Timers.Timer(10);
+            timer.Elapsed += Timer_Elapsed; ;
+            timer.AutoReset = true;
+            timer.Enabled = true;
+        }
+
+        private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            if (reseiveClientControl.Client.IsRunning)
+            {
+                System.Windows.Forms.Cursor.Position = new Point(
+                    System.Windows.Forms.Cursor.Position.X + 5 * direction,
+                    System.Windows.Forms.Cursor.Position.Y);
+            }
         }
 
         private void InitChart()
@@ -68,16 +79,6 @@ namespace OnlineTask
                 chart.Legends.Add(new Legend(name[i]) { DockedToChartArea = name[i], Docking = Docking.Right });
                 chart.Series.Add(new Series() { ChartArea = name[i], Legend = name[i], LegendText = name[i] });
                 chart.Series[i].ChartType = SeriesChartType.FastLine;
-            }
-        }
-
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            if (reseiveClientControl.Client.IsRunning)
-            {
-                System.Windows.Forms.Cursor.Position = new Point(
-                    System.Windows.Forms.Cursor.Position.X + 2 * direction,
-                    System.Windows.Forms.Cursor.Position.Y);
             }
         }
 
@@ -122,12 +123,12 @@ namespace OnlineTask
                 double rightAvg = (sum[2] + sum[3]) / 2;
                 double k = leftAvg / rightAvg;
 
-                if (k > 1.1)
+                if (k > 1.5)
                 {
                     direction = -1;
                     labelDir.Text = "←";
                 }
-                else if (k < 0.9)
+                else if (k < 0.5)
                 {
                     direction = 1;
                     labelDir.Text = "→";
